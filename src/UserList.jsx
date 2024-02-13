@@ -20,32 +20,6 @@ const UserList = () => {
   }, []);
 
   return (
-    // <div className="user-list-container">
-    //   <h1>User List</h1>
-    //   <ul className="user-list">
-    //     {/* Map through the array of users and render them dynamically */}
-    //     {users.map((user) => (
-    //       <li key={user.id} className="user-item">
-    //         <div className="user-info">
-    //           <h2>{user.name}</h2>
-    //           <p>
-    //             <strong>Username:</strong> {user.username}
-    //           </p>
-    //           <p>
-    //             <strong>Email:</strong> {user.email}
-    //           </p>
-    //           <p>
-    //             <strong>Phone:</strong> {user.phone}
-    //           </p>
-    //           <p>
-    //             <strong>Address:</strong> {user.address.city},{" "}
-    //             {user.address.street}, {user.address.suite}
-    //           </p>
-    //         </div>
-    //       </li>
-    //     ))}
-    //   </ul>
-    // </div>
     <div className="user-list-container">
       <h1>User List</h1>
       <table className="user-table">
@@ -59,7 +33,6 @@ const UserList = () => {
           </tr>
         </thead>
         <tbody>
-          {/* Map through the array of users and render them dynamically in table rows */}
           {users.map((user) => (
             <tr key={user.id} className="user-row">
               <td>{user.name}</td>
